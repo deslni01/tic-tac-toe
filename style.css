@@ -1,0 +1,23 @@
+#board-area {
+    height: 502px;
+    width: 502px;
+    background-color: tan;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: solid;
+    border-color: black;
+    border-width: 1px 1px;
+}
+
+.cells {
+    height: 166px;
+    width: 166px;
+    border: solid;
+    border-color: black;
+    border-width: 1px 1px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
