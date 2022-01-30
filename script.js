@@ -1,4 +1,5 @@
 // Tic Tac Toe!
+// Prettier test
 
 function players(name, marker) {
 	const getPlayerName = () => name;
