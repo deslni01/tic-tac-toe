@@ -144,22 +144,22 @@ startBtn.addEventListener('click', () => {
 /* 
 - for the _findOutcome portion, I tried using a for loop with no luck, it just wasn't working until trying the winningSets.forEach loop. Here was previous code:
 ```javascript
-		// if (displayController.markPlay() < 9) {
-		// 	for (let i = 0; i < 8; i++) {
+    // if (displayController.markPlay() < 9) {
+    // 	for (let i = 0; i < 8; i++) {
 
-		// 		winningSets[i][0] = gameBoard.getGameBoard()[`${winningSets[i][0]}`];
-		// 		winningSets[i][1] = gameBoard.getGameBoard()[`${winningSets[i][1]}`];
-		// 		winningSets[i][2] = gameBoard.getGameBoard()[`${winningSets[i][2]}`];
+    // 		winningSets[i][0] = gameBoard.getGameBoard()[`${winningSets[i][0]}`];
+    // 		winningSets[i][1] = gameBoard.getGameBoard()[`${winningSets[i][1]}`];
+    // 		winningSets[i][2] = gameBoard.getGameBoard()[`${winningSets[i][2]}`];
 
-		// 		if (
-		// 			winningSets[i][0] === winningSets[i][1] &&
-		// 			winningSets[i][1] === winningSets[i][2]
-		// 		) {
-		// 			console.log(`Winner! ${this.activePlayer.getPlayerName()} takes it home!`);
-		// 		} else {
-		// 			return;
-		// 		}
-		// 	}
-		// }
+    // 		if (
+    // 			winningSets[i][0] === winningSets[i][1] &&
+    // 			winningSets[i][1] === winningSets[i][2]
+    // 		) {
+    // 			console.log(`Winner! ${this.activePlayer.getPlayerName()} takes it home!`);
+    // 		} else {
+    // 			return;
+    // 		}
+    // 	}
+    // }
 ```
 */
