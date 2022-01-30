@@ -22,7 +22,9 @@ const player1Form = document.querySelector('#player-one');
 const player2Form = document.querySelector('#player-two');
 
 function nextPlayer() {
-	activePlayer === player1 ? (activePlayer = player2) : (activePlayer = player1);
+	activePlayer === player1
+		? (activePlayer = player2)
+		: (activePlayer = player1);
 	gameStatus.innerText = `It's ${activePlayer.getPlayerName()}'s turn.`;
 }
 
@@ -109,8 +111,10 @@ const gameFlow = (function () {
 		if (displayController.markPlay() < 9) {
 			winningSets.forEach((item, index) => {
 				if (
-					gameBoard.getGameBoard()[item[0]] === gameBoard.getGameBoard()[item[1]] &&
-					gameBoard.getGameBoard()[item[1]] === gameBoard.getGameBoard()[item[2]]
+					gameBoard.getGameBoard()[item[0]] ===
+						gameBoard.getGameBoard()[item[1]] &&
+					gameBoard.getGameBoard()[item[1]] ===
+						gameBoard.getGameBoard()[item[2]]
 				) {
 					gameStatus.innerText = `Winner! ${activePlayer.getPlayerName()} takes it home!`;
 					gameOver = 'true';
