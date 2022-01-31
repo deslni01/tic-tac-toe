@@ -1,5 +1,5 @@
 // Tic Tac Toe!
-// Prettier test
+// Branching test
 
 function players(name, marker) {
 	const getPlayerName = () => name;
